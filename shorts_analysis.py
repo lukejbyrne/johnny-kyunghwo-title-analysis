@@ -20,7 +20,7 @@ print(list(st_videos)[0])
 for v in st_videos:
 
     # get titles, views, upload date, video length
-    title = v['headline']['simpleText']['headline']['simpleText']
+    title = v['headline']['simpleText']['headline']['simpleText'] #TODO: This isn't working
     views = v['viewCountText']['simpleText']
 
     video_details.append(video(title, views))
